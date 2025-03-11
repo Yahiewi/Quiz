@@ -5,16 +5,15 @@
       <h2 class="text-2xl font-bold mb-6 text-blue-200">Quiz Setup</h2>
       <form @submit.prevent="startQuiz">
         <div class="mb-4">
-          <label for="subject" class="block text-blue-300 mb-2">Select Subject:</label>
-          <select
+          <label for="subject" class="block text-blue-300 mb-2">Enter Subject:</label>
+          <input
             id="subject"
             v-model="quizParams.subject"
+            type="text"
+            placeholder="e.g., Python, History, Math"
             class="w-full px-4 py-2 bg-gray-700 border border-blue-500 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option v-for="(label, value) in SUBJECT_CHOICES" :key="value" :value="value">
-              {{ label }}
-            </option>
-          </select>
+            required
+          />
         </div>
         <div class="mb-6">
           <label for="numQuestions" class="block text-blue-300 mb-2">Number of Questions:</label>
@@ -25,6 +24,7 @@
             min="1"
             max="10"
             class="w-full px-4 py-2 bg-gray-700 border border-blue-500 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
           />
         </div>
         <button
@@ -155,16 +155,8 @@ export default {
   name: "Quiz",
   data() {
     return {
-      SUBJECT_CHOICES: {
-        Vue: "Vue",
-        Django: "Django",
-        HTML_CSS: "HTML & CSS",
-        JS: "JavaScript",
-        TS: "TypeScript",
-        Algorithms: "Algorithms and Data Structures",
-      },
       quizParams: {
-        subject: "Vue", // Default subject
+        subject: "", // User will type the subject
         numQuestions: 5, // Default number of questions
       },
       questions: [],
