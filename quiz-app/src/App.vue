@@ -24,7 +24,7 @@ import Quiz from './components/Quiz.vue'
     
     <!-- Footer -->
     <div class="mt-8 text-center text-blue-300 text-sm opacity-80">
-      <p>Made with ❤️ for knowledge seekers</p>
+      <p>Made by Yahiewi. Enjoy :)</p>
     </div>
   </div>
 </template>
