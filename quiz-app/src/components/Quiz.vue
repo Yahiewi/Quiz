@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-2xl mx-auto p-6">
+  <div class="w-full p-6">
     <!-- Quiz Setup Form (Visible Before Quiz Starts) -->
     <div v-if="!quizStarted" class="quiz-setup">
       <h2 class="text-2xl font-bold mb-6 text-blue-200">Quiz Setup</h2>

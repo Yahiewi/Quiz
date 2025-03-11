@@ -18,7 +18,7 @@ import Quiz from './components/Quiz.vue'
     </div>
     
     <!-- Main quiz component with card effect -->
-    <div class="w-full max-w-4xl backdrop-blur-sm bg-gray-900/50 rounded-xl p-1 shadow-glow-blue">
+    <div class="w-full max-w-6xl backdrop-blur-sm bg-gray-900/50 rounded-xl p-1 shadow-glow-blue">
       <Quiz />
     </div>
     
