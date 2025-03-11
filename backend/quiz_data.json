@@ -1,0 +1,183 @@
+[
+    {
+      "model": "quiz.question",
+      "pk": 1,
+      "fields": {
+        "question_text": "What is the primary advantage of PostgreSQL compared to other relational databases?",
+        "answers": ["Better performance on read-heavy workloads", "ACID compliance and advanced extensibility", "Simpler query language", "Built-in NoSQL support"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 2,
+      "fields": {
+        "question_text": "Which PostgreSQL feature allows you to store semi-structured data efficiently?",
+        "answers": ["JSON", "JSONB", "XML", "YAML"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 3,
+      "fields": {
+        "question_text": "What does ACID stand for in database systems?",
+        "answers": ["Atomicity, Consistency, Isolation, Durability", "Accuracy, Consistency, Integrity, Durability", "Atomicity, Compatibility, Isolation, Dependability", "Accessibility, Consistency, Integration, Durability"],
+        "correct_answer": 0
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 4,
+      "fields": {
+        "question_text": "Which HTTP method is typically used to update an existing resource in RESTful API design?",
+        "answers": ["GET", "POST", "PUT", "PATCH"],
+        "correct_answer": 2
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 5,
+      "fields": {
+        "question_text": "Which data structure is best suited for a FIFO (first in, first out) system?",
+        "answers": ["Stack", "Queue", "Binary Tree", "Graph"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 6,
+      "fields": {
+        "question_text": "Which data structure follows the LIFO (last in, first out) principle?",
+        "answers": ["Queue", "Stack", "Linked List", "Heap"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 7,
+      "fields": {
+        "question_text": "What is the time complexity for inserting an element in a balanced binary search tree (BST)?",
+        "answers": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 8,
+      "fields": {
+        "question_text": "In RESTful APIs, what does the term 'stateless' mean?",
+        "answers": ["The server stores session state", "Each request from a client contains all necessary information", "The API uses cookies to maintain state", "None of the above"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 9,
+      "fields": {
+        "question_text": "Which PostgreSQL index type is best for full-text search?",
+        "answers": ["B-tree", "GIN", "Hash", "GiST"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 10,
+      "fields": {
+        "question_text": "Which HTTP status code indicates that a resource was successfully created?",
+        "answers": ["200", "201", "404", "500"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 11,
+      "fields": {
+        "question_text": "What is one key advantage of using REST over SOAP?",
+        "answers": ["Heavier payload", "Stateful communication", "Simpler, stateless communication", "Strict messaging format"],
+        "correct_answer": 2
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 12,
+      "fields": {
+        "question_text": "Which PostgreSQL feature supports replication and failover mechanisms?",
+        "answers": ["Streaming Replication", "Point-in-Time Recovery", "Logical Decoding", "Partitioning"],
+        "correct_answer": 0
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 13,
+      "fields": {
+        "question_text": "Which data structure is most efficient for implementing a priority queue?",
+        "answers": ["Array", "Linked List", "Heap", "Stack"],
+        "correct_answer": 2
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 14,
+      "fields": {
+        "question_text": "What does the HTTP DELETE method do in RESTful APIs?",
+        "answers": ["Retrieves a resource", "Updates a resource", "Deletes a resource", "Creates a resource"],
+        "correct_answer": 2
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 15,
+      "fields": {
+        "question_text": "What is the purpose of using the Django REST Framework?",
+        "answers": ["To create traditional HTML pages", "To build RESTful APIs easily", "To manage databases", "To improve Django's ORM performance"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 16,
+      "fields": {
+        "question_text": "Which data structure is best suited for implementing undo functionality in applications?",
+        "answers": ["Queue", "Stack", "Tree", "Graph"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 17,
+      "fields": {
+        "question_text": "In PostgreSQL, which command is used to create a new database?",
+        "answers": ["CREATE TABLE", "CREATE DATABASE", "NEW DATABASE", "INIT DATABASE"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 18,
+      "fields": {
+        "question_text": "Which HTTP method is idempotent, meaning multiple identical requests have the same effect as a single request?",
+        "answers": ["POST", "GET", "PUT", "PATCH"],
+        "correct_answer": 2
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 19,
+      "fields": {
+        "question_text": "What is the purpose of an index in a database like PostgreSQL?",
+        "answers": ["To store large objects", "To speed up data retrieval", "To ensure data consistency", "To replicate data"],
+        "correct_answer": 1
+      }
+    },
+    {
+      "model": "quiz.question",
+      "pk": 20,
+      "fields": {
+        "question_text": "Which data structure is best for managing key-value pairs?",
+        "answers": ["Array", "Hash Table", "Linked List", "Stack"],
+        "correct_answer": 1
+      }
+    }
+  ]
+  
