@@ -16,10 +16,10 @@
           />
         </div>
         <div class="mb-6">
-          <label for="numQuestions" class="block text-blue-300 mb-2">Number of Questions:</label>
+          <label for="num_questions" class="block text-blue-300 mb-2">Number of Questions:</label>
           <input
-            id="numQuestions"
-            v-model.number="quizParams.numQuestions"
+            id="num_questions"
+            v-model.number="quizParams.num_questions"
             type="number"
             min="1"
             max="10"
@@ -140,6 +140,13 @@
                 <p class="mb-1 text-sm text-gray-400">Correct answer:</p>
                 <p class="text-green-400 font-medium">
                   {{ item.question.answers[item.question.correct_answer] }}
+                </p>
+              </div>
+              <!-- Explanation Section -->
+              <div class="pl-4 border-l-2 border-blue-700 mt-3">
+                <p class="mb-1 text-sm text-gray-400">Explanation:</p>
+                <p class="text-blue-300 font-medium">
+                  {{ item.question.explanation }}
                 </p>
               </div>
             </div>

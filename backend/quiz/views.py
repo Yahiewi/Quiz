@@ -43,16 +43,18 @@ class GenerateQuizView(APIView):
         Each question should:
         1. Be challenging but answerable with typical knowledge of {subject}
         2. Have exactly 4 multiple-choice answers with one correct answer
-        3. Be formatted as a valid JSON array with objects in this exact structure:
+        3. Include an explanation for why the correct answer is correct
+        4. Be formatted as a valid JSON array with objects in this exact structure:
         
         [
-          {{
+        {{
             "question_text": "The question here?",
             "answers": ["Answer A", "Answer B", "Answer C", "Answer D"],
             "correct_answer": 0,  // Index of correct answer (0-3)
+            "explanation": "Explanation for why the correct answer is correct.",
             "subject": "{subject}"
-          }},
-          // More questions...
+        }},
+        // More questions...
         ]
         
         The response should be ONLY the JSON array, nothing else.
@@ -94,7 +96,7 @@ class GenerateQuizView(APIView):
             return questions
         except json.JSONDecodeError as e:
             raise Exception(f"Failed to parse LLM response as JSON: {str(e)}, Content: {content[:100]}...")
-    
+
     def validate_questions(self, questions):
         """Validate the structure of generated questions"""
         if not isinstance(questions, list):
@@ -103,7 +105,7 @@ class GenerateQuizView(APIView):
         for q in questions:
             if not isinstance(q, dict):
                 raise Exception("Question is not a dictionary")
-            if "question_text" not in q or "answers" not in q or "correct_answer" not in q:
+            if "question_text" not in q or "answers" not in q or "correct_answer" not in q or "explanation" not in q:
                 raise Exception("Question is missing required fields")
             if not isinstance(q["answers"], list) or len(q["answers"]) != 4:
                 raise Exception("Answers should be a list of exactly 4 items")
